@@ -1,0 +1,14 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "baseBranch": "origin/main",
+  "npmClient": "pnpm",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "dist/**"]
+    },
+    "dev": {
+      "dependsOn": ["^dev"]
+    }
+  }
+}

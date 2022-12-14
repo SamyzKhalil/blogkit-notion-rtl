@@ -1,0 +1,30 @@
+{
+  "name": "blogkit-notion",
+  "version": "0.5.2",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "lib"
+  ],
+  "funding": "https://github.com/sponsors/2nthony",
+  "author": "2nthony",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/lodash": "^4.14.179",
+    "blogkit": "workspace:^",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@notionhq/client": "^1.0.1",
+    "lodash": "^4.17.21",
+    "notion-to-md": "^2.3.1"
+  },
+  "peerDependencies": {
+    "blogkit": "workspace:^"
+  }
+}
